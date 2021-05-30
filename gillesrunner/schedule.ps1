@@ -1,0 +1,1 @@
+﻿D:\Anaconda3\envs\game\python.exe E:\game_script_v2\gillesrunner\gillesrunner\main.py $args

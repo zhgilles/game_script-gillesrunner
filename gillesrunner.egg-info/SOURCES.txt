@@ -1,0 +1,7 @@
+README.md
+setup.cfg
+setup.py
+gillesrunner.egg-info/PKG-INFO
+gillesrunner.egg-info/SOURCES.txt
+gillesrunner.egg-info/dependency_links.txt
+gillesrunner.egg-info/top_level.txt
