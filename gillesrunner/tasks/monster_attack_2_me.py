@@ -7,8 +7,7 @@ from gillescommon.operation.operation_basic import my_touch, my_exist_and_touch,
 from gillescommon.position.images import search_2_me, touch_2_me, attack_me, select_commander_me, cross_me, \
     select_troops_me, march_me, setup_me, queue_add_me, minus_me, ok_me
 from gillescommon.position.points import search_me, whisperers_me, plan_1_me, plan_2_me, center_me, plan_3_me, \
-    whisperers_max_level_me
-
+    whisperers_max_level_me, plan_4_me
 
 plan_idx = 0
 monster_level_offset = 0
@@ -62,7 +61,7 @@ def _attack_monster(i, plan_lst):
 
 
 def main():
-    plan_lst = [plan_1_me, plan_2_me, plan_3_me]
+    plan_lst = [plan_1_me, plan_2_me, plan_3_me, plan_4_me]
     for i in range(4):
         _attack_monster(i, plan_lst)
         sleep(1)
