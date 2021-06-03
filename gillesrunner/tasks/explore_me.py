@@ -15,17 +15,17 @@ def _explore_me():
         pass
     my_touch(post_station_me, wait_time=1)
     my_touch(explore_me, wait_time=1)
-    if my_exist_and_touch(explore_2_me, wait_time=1):
-        my_exist_and_touch(explore_3_me, wait_time=1)
+    if my_exist_and_touch(explore_2_me, wait_time=2):
+        my_exist_and_touch(explore_3_me, wait_time=3)
         for i in [dispatch_me, dispatch_2_me, dispatch_3_me]:
-            if my_exist_and_touch(i, wait_time=0.5):
+            if my_exist_and_touch(i):
                 break
     else:
         my_touch(cross_2_me)
 
 
 def main():
-    for i in range(3):
+    for i in range(5):
         _explore_me()
         time.sleep(3)
 
