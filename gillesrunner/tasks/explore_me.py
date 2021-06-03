@@ -16,7 +16,7 @@ def _explore_me():
     my_touch(post_station_me, wait_time=1)
     my_touch(explore_me, wait_time=1)
     if my_exist_and_touch(explore_2_me, wait_time=1):
-        my_exist_and_touch(explore_3_me, wait_time=0.5)
+        my_exist_and_touch(explore_3_me, wait_time=1)
         for i in [dispatch_me, dispatch_2_me, dispatch_3_me]:
             if my_exist_and_touch(i, wait_time=0.5):
                 break
