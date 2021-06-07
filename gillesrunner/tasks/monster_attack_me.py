@@ -7,7 +7,7 @@ from gillescommon.operation.operation_basic import my_touch, my_exist_and_touch,
 from gillescommon.position.images import search_2_me, touch_2_me, attack_me, select_commander_me, cross_me, \
     select_troops_me, march_me, setup_me, queue_add_me, minus_me, ok_me
 from gillescommon.position.points import search_me, whisperers_me, plan_1_me, plan_2_me, center_me, plan_3_me, \
-    whisperers_max_level_me
+    max_level_me
 
 
 i = 0
@@ -16,7 +16,7 @@ i = 0
 def _chose_monster(minus_times, force):
     my_touch(search_me, wait_time=0.5)
     my_touch(whisperers_me)
-    my_touch(whisperers_max_level_me)
+    my_touch(max_level_me)
     for i in range(minus_times):
         my_touch(minus_me)
     while True:
