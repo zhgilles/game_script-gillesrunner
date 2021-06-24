@@ -33,7 +33,11 @@ def get_args():
     )
     parser.add_argument(
         '-s', '--scene',
-        type=str, action='store', required=False, help='条装场景，可选的范围为：1、城里；2、城里城；3、世界地图'
+        type=str, action='store', required=False, help='切换场景，可选的范围为：1、城里；2、城里城；3、世界地图'
+    )
+    parser.add_argument(
+        '-ril', '--rss_idx_lst',
+        type=str, action='store', required=False, help='使用的资源idx队列，可选范围：0、farm；1、log_yard；2、iron_mine；3、gold_mine'
     )
     args = parser.parse_args()
     print(args)

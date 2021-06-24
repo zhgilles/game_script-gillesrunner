@@ -62,7 +62,7 @@ def main():
     plan_lst = [plan_1_me, plan_2_me, plan_3_me]
     for minus_times, force in zip(
         [0, 0, 1, 1, 2, 2, 3, 3, 4, 4, 5]
-        , [True, True, True, True, True, True, False, False, False, False, False]
+        , [True, True, True, True, True, True, True, True, True, True, False]
     ):
         _attack_monster(minus_times, plan_lst, force)
         sleep(1)
