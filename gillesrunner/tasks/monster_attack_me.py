@@ -62,7 +62,7 @@ def _attack_monster(i, plan_lst):
 
 def main():
     plan_lst = [plan_1_me, plan_2_me, plan_3_me, plan_4_me, plan_5_me]
-    for i in range(4):
+    for i in range(5):
         _attack_monster(i, plan_lst)
         sleep(1)
 
