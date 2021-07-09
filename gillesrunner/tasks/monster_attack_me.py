@@ -19,7 +19,9 @@ def _chose_monster(i):
     my_touch(whisperers_me)
     if i == 0:
         my_touch(max_level_me)
-    elif monster_level_offset > 6:  # 最高等级31级 25-31都要多人打
+        for _ in range(8):
+            my_touch(minus_me)
+    elif monster_level_offset >= 0:  # 最高等级31级 25-31都要多人打
         my_touch(minus_me)
     while True:
         my_touch(search_2_me, wait_time=1.5)
@@ -62,7 +64,7 @@ def _attack_monster(i, plan_lst):
 
 def main():
     plan_lst = [plan_1_me, plan_2_me, plan_3_me, plan_4_me, plan_5_me]
-    for i in range(5):
+    for i in range(3*len(plan_lst)):
         _attack_monster(i, plan_lst)
         sleep(1)
 
