@@ -10,11 +10,6 @@ from gillescommon.position.points import post_station_me, explore_me, map_switch
 
 
 def _explore_me():
-    my_exist_and_touch(cross_me)
-    my_exist_and_touch(ok_me)
-    my_touch(map_switch_2_me, wait_time=1)
-    while my_exist_and_touch(map_switch_me, wait_time=1):
-        pass
     my_touch(post_station_me, wait_time=1)
     my_touch(explore_me, wait_time=1)
     if my_exist_and_touch(explore_2_me, wait_time=2):

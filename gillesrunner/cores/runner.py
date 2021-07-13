@@ -30,7 +30,7 @@ def runner(task_name: str, args):
     func = TASKS.get(task_name)
     if not func:
         exit(f"not exist main func in current task: {task_name}")
-    ST.FIND_TIMEOUT_TMP = 0.2
+    ST.FIND_TIMEOUT_TMP = 0.1
     auto_setup(
         __file__
         , logdir=False
